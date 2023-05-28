@@ -8,7 +8,7 @@
 import SwiftUI
 import CoreData
 
-struct ContentView: View {
+struct ExpressCompanyListView: View {
     var body: some View {
         Text("hello")
     }

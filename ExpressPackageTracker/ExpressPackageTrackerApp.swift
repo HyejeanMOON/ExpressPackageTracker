@@ -13,7 +13,7 @@ struct ExpressPackageTrackerApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ExpressCompanyListView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
