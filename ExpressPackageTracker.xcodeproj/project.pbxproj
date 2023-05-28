@@ -17,6 +17,7 @@
 		73345DBB2A23440600A45DA9 /* ExpressPackageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73345DBA2A23440600A45DA9 /* ExpressPackageDetailView.swift */; };
 		73345DBD2A23454400A45DA9 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73345DBC2A23454400A45DA9 /* WebView.swift */; };
 		73345DBF2A23457200A45DA9 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73345DBE2A23457200A45DA9 /* StringExtension.swift */; };
+		73345DC12A23850E00A45DA9 /* SearchPackageDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73345DC02A23850E00A45DA9 /* SearchPackageDialog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		73345DBA2A23440600A45DA9 /* ExpressPackageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressPackageDetailView.swift; sourceTree = "<group>"; };
 		73345DBC2A23454400A45DA9 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		73345DBE2A23457200A45DA9 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		73345DC02A23850E00A45DA9 /* SearchPackageDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPackageDialog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				73345DA62A233E7000A45DA9 /* ExpressCompanyListView.swift */,
 				73345DBA2A23440600A45DA9 /* ExpressPackageDetailView.swift */,
 				73345DBC2A23454400A45DA9 /* WebView.swift */,
+				73345DC02A23850E00A45DA9 /* SearchPackageDialog.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			files = (
 				73345DA52A233E7000A45DA9 /* ExpressPackageTracker.xcdatamodeld in Sources */,
 				73345DA02A233E7000A45DA9 /* ExpressPackageTrackerApp.swift in Sources */,
+				73345DC12A23850E00A45DA9 /* SearchPackageDialog.swift in Sources */,
 				73345DA72A233E7000A45DA9 /* ExpressCompanyListView.swift in Sources */,
 				73345DB92A233FF100A45DA9 /* ExpressCompany.swift in Sources */,
 				73345DBF2A23457200A45DA9 /* StringExtension.swift in Sources */,
