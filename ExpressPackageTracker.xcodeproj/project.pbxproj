@@ -13,6 +13,7 @@
 		73345DA72A233E7000A45DA9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73345DA62A233E7000A45DA9 /* ContentView.swift */; };
 		73345DA92A233E7500A45DA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73345DA82A233E7500A45DA9 /* Assets.xcassets */; };
 		73345DAD2A233E7500A45DA9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73345DAC2A233E7500A45DA9 /* Preview Assets.xcassets */; };
+		73345DB92A233FF100A45DA9 /* ExpressCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73345DB82A233FF100A45DA9 /* ExpressCompany.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		73345DA82A233E7500A45DA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73345DAA2A233E7500A45DA9 /* ExpressPackageTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExpressPackageTracker.entitlements; sourceTree = "<group>"; };
 		73345DAC2A233E7500A45DA9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		73345DB82A233FF100A45DA9 /* ExpressCompany.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressCompany.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +58,14 @@
 		73345D9E2A233E7000A45DA9 /* ExpressPackageTracker */ = {
 			isa = PBXGroup;
 			children = (
+				73345DB32A233F5B00A45DA9 /* ui */,
 				73345D9F2A233E7000A45DA9 /* ExpressPackageTrackerApp.swift */,
 				73345DA12A233E7000A45DA9 /* Persistence.swift */,
-				73345DA62A233E7000A45DA9 /* ContentView.swift */,
 				73345DA82A233E7500A45DA9 /* Assets.xcassets */,
 				73345DAA2A233E7500A45DA9 /* ExpressPackageTracker.entitlements */,
 				73345DA32A233E7000A45DA9 /* ExpressPackageTracker.xcdatamodeld */,
 				73345DAB2A233E7500A45DA9 /* Preview Content */,
+				73345DB82A233FF100A45DA9 /* ExpressCompany.swift */,
 			);
 			path = ExpressPackageTracker;
 			sourceTree = "<group>";
@@ -73,6 +76,14 @@
 				73345DAC2A233E7500A45DA9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		73345DB32A233F5B00A45DA9 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				73345DA62A233E7000A45DA9 /* ContentView.swift */,
+			);
+			path = ui;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +159,7 @@
 				73345DA52A233E7000A45DA9 /* ExpressPackageTracker.xcdatamodeld in Sources */,
 				73345DA02A233E7000A45DA9 /* ExpressPackageTrackerApp.swift in Sources */,
 				73345DA72A233E7000A45DA9 /* ContentView.swift in Sources */,
+				73345DB92A233FF100A45DA9 /* ExpressCompany.swift in Sources */,
 				73345DA22A233E7000A45DA9 /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
