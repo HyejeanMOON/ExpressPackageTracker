@@ -40,13 +40,12 @@ struct SearchPackageDialog: View {
                         Button {
                             hideDialog()
                         } label: {
-                            Label("Cancel", systemImage: "")
+                            Label("Cancel", systemImage: "xmark")
                         }
                         
                         Spacer()
                         
                         Button {
-                            
                             hideDialog()
                         } label: {
                             Label("Search",systemImage: "magnifyingglass")
