@@ -14,7 +14,6 @@
 		73345DA92A233E7500A45DA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73345DA82A233E7500A45DA9 /* Assets.xcassets */; };
 		73345DAD2A233E7500A45DA9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73345DAC2A233E7500A45DA9 /* Preview Assets.xcassets */; };
 		73345DB92A233FF100A45DA9 /* ExpressCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73345DB82A233FF100A45DA9 /* ExpressCompany.swift */; };
-		73345DBB2A23440600A45DA9 /* ExpressPackageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73345DBA2A23440600A45DA9 /* ExpressPackageDetailView.swift */; };
 		73345DBD2A23454400A45DA9 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73345DBC2A23454400A45DA9 /* WebView.swift */; };
 		73345DBF2A23457200A45DA9 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73345DBE2A23457200A45DA9 /* StringExtension.swift */; };
 		73345DC12A23850E00A45DA9 /* SearchPackageDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73345DC02A23850E00A45DA9 /* SearchPackageDialog.swift */; };
@@ -30,7 +29,6 @@
 		73345DAA2A233E7500A45DA9 /* ExpressPackageTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExpressPackageTracker.entitlements; sourceTree = "<group>"; };
 		73345DAC2A233E7500A45DA9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		73345DB82A233FF100A45DA9 /* ExpressCompany.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressCompany.swift; sourceTree = "<group>"; };
-		73345DBA2A23440600A45DA9 /* ExpressPackageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressPackageDetailView.swift; sourceTree = "<group>"; };
 		73345DBC2A23454400A45DA9 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		73345DBE2A23457200A45DA9 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		73345DC02A23850E00A45DA9 /* SearchPackageDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPackageDialog.swift; sourceTree = "<group>"; };
@@ -91,7 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				73345DA62A233E7000A45DA9 /* ExpressCompanyListView.swift */,
-				73345DBA2A23440600A45DA9 /* ExpressPackageDetailView.swift */,
 				73345DBC2A23454400A45DA9 /* WebView.swift */,
 				73345DC02A23850E00A45DA9 /* SearchPackageDialog.swift */,
 			);
@@ -175,7 +172,6 @@
 				73345DB92A233FF100A45DA9 /* ExpressCompany.swift in Sources */,
 				73345DBF2A23457200A45DA9 /* StringExtension.swift in Sources */,
 				73345DA22A233E7000A45DA9 /* PersistenceController.swift in Sources */,
-				73345DBB2A23440600A45DA9 /* ExpressPackageDetailView.swift in Sources */,
 				73345DBD2A23454400A45DA9 /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
