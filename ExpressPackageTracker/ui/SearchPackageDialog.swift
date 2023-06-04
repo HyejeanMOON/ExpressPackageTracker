@@ -8,15 +8,20 @@
 import SwiftUI
 
 struct SearchPackageDialog: View {
-    @State var expressCompany: ExpressCompany
-    @State var show: Bool
+    @Binding var expressCompany: ExpressCompany
+    @Binding var show: Bool
     @State private var currentId: String = ""
     @FocusState private var focusState: Bool
+    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         ZStack {
             if show {
-                Color.black.opacity(show ? 0.3 : 0).edgesIgnoringSafeArea(.all)
+                if(colorScheme == .light) {
+                    Color.black.opacity(show ? 0.3 : 0).edgesIgnoringSafeArea(.all)
+                } else {
+                    Color.white.opacity(show ? 0.3 : 0).edgesIgnoringSafeArea(.all)
+                }
                 
                 VStack(alignment: .center, spacing: 0) {
                     Text(expressCompany.rawValue)
@@ -28,15 +33,15 @@ struct SearchPackageDialog: View {
                     HStack {
                         Label("",systemImage: "exclamationmark.circle")
                         TextField("追跡IDを入力してください",text: $currentId)
-                                .focused($focusState)
+                            .frame(maxWidth: .infinity)
+                            .focused($focusState)
+                                
                     }
                     .padding(.leading, 25)
                     .padding(.trailing, 25)
                     .padding(.top, 20)
                     
-                    
                     HStack {
-                        
                         Button {
                             hideDialog()
                         } label: {
@@ -47,6 +52,7 @@ struct SearchPackageDialog: View {
                         
                         Button {
                             hideDialog()
+                            // TODO
                         } label: {
                             Label("Search",systemImage: "magnifyingglass")
                         }
@@ -58,8 +64,14 @@ struct SearchPackageDialog: View {
                     
                 }
                 .frame(maxWidth: 300)
-                .background(Color.white)
+                .background(colorScheme == .dark ? Color.black:Color.white)
                 .clipShape(RoundedRectangle(cornerRadius: 20))
+            }
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now()+0.5) {
+                focusState = true
             }
         }
     }
@@ -69,11 +81,11 @@ struct SearchPackageDialog: View {
     }
 }
 
-struct SearchPackageDialog_Previews: PreviewProvider {
-    static var previews: some View {
-        SearchPackageDialog(
-            expressCompany: ExpressCompany.Yamato,
-            show: true
-        )
-    }
-}
+//struct SearchPackageDialog_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SearchPackageDialog(
+//            expressCompany: ExpressCompany.Yamato,
+//            show: true
+//        )
+//    }
+//}

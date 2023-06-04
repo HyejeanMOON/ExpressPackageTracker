@@ -16,34 +16,43 @@ struct ExpressCompanyListView: View {
     )
     private var searchHistorys: FetchedResults<SearchiHistoryItem>
     
+    @State var shouldShowDialog: Bool = false
+    @State var selectedExpressCompany:ExpressCompany = ExpressCompany.PostJapan
+    
     var body: some View {
-        NavigationView{
-            List{
-                Section(header:Text("会社")){
-                    ForEach(ExpressCompany.allCases, id:\.self){ company in
-                        NavigationLink(destination: ExpressPackageDetailView(expressCompany:company)) {
-                            Label(company.rawValue,systemImage: "house")
+        ZStack{
+            NavigationView{
+                List{
+                    Section(header:Text("会社")){
+                        ForEach(ExpressCompany.allCases, id:\.self){ company in
+                            Button {
+                                selectedExpressCompany = company
+                                shouldShowDialog = true
+                            } label: {
+                                Label(company.rawValue,systemImage: "house")
+                            }
+                            
                         }
                     }
-                }
-                
-                Section(header: Text("検索履歴")){
-                    if(searchHistorys.isEmpty){
-                        Label("検索履歴なし",systemImage: "magnifyingglass")
-                    }else{
-                        List{
-                            ForEach(searchHistorys){ item in
-                                Label(item.trackerId ?? "",systemImage: "magnifyingglass")
+                    
+                    Section(header: Text("検索履歴")){
+                        if(searchHistorys.isEmpty){
+                            Label("検索履歴なし",systemImage: "magnifyingglass")
+                        }else{
+                            List{
+                                ForEach(searchHistorys){ item in
+                                    Label(item.trackerId ?? "",systemImage: "magnifyingglass")
+                                }
                             }
                         }
                     }
                 }
+                .navigationTitle(Text("Package Tracker"))
+                .navigationBarHidden(false)
             }
-            .navigationTitle(Text("Package Tracker"))
-            .navigationBarHidden(false)
+            SearchPackageDialog(expressCompany: $selectedExpressCompany, show: $shouldShowDialog)
         }
     }
-
 }
 
 struct ContentView_Previews: PreviewProvider {
