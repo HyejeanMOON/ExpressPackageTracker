@@ -17,6 +17,7 @@
 		73345DBD2A23454400A45DA9 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73345DBC2A23454400A45DA9 /* WebView.swift */; };
 		73345DBF2A23457200A45DA9 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73345DBE2A23457200A45DA9 /* StringExtension.swift */; };
 		73345DC12A23850E00A45DA9 /* SearchPackageDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73345DC02A23850E00A45DA9 /* SearchPackageDialog.swift */; };
+		73B974E22A2C6DC700FFB255 /* ValidationsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B974E12A2C6DC700FFB255 /* ValidationsUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		73345DBC2A23454400A45DA9 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		73345DBE2A23457200A45DA9 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		73345DC02A23850E00A45DA9 /* SearchPackageDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPackageDialog.swift; sourceTree = "<group>"; };
+		73B974E12A2C6DC700FFB255 /* ValidationsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationsUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		73345D9E2A233E7000A45DA9 /* ExpressPackageTracker */ = {
 			isa = PBXGroup;
 			children = (
+				73B974E02A2C6DA300FFB255 /* utils */,
 				73345DB32A233F5B00A45DA9 /* ui */,
 				73345D9F2A233E7000A45DA9 /* ExpressPackageTrackerApp.swift */,
 				73345DA12A233E7000A45DA9 /* PersistenceController.swift */,
@@ -93,6 +96,14 @@
 				73345DC02A23850E00A45DA9 /* SearchPackageDialog.swift */,
 			);
 			path = ui;
+			sourceTree = "<group>";
+		};
+		73B974E02A2C6DA300FFB255 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				73B974E12A2C6DC700FFB255 /* ValidationsUtils.swift */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +180,7 @@
 				73345DA02A233E7000A45DA9 /* ExpressPackageTrackerApp.swift in Sources */,
 				73345DC12A23850E00A45DA9 /* SearchPackageDialog.swift in Sources */,
 				73345DA72A233E7000A45DA9 /* ExpressCompanyListView.swift in Sources */,
+				73B974E22A2C6DC700FFB255 /* ValidationsUtils.swift in Sources */,
 				73345DB92A233FF100A45DA9 /* ExpressCompany.swift in Sources */,
 				73345DBF2A23457200A45DA9 /* StringExtension.swift in Sources */,
 				73345DA22A233E7000A45DA9 /* PersistenceController.swift in Sources */,
